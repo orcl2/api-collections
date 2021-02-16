@@ -10,8 +10,13 @@ fun main(){
 
     funcionarios.forEach{ println(it) }
 
+    println("--------------------")
     println( funcionarios.find { it.nome.equals("Maria") })
 
+    println("--------------------")
+    funcionarios
+        .sortedBy { it.salario }
+        .forEach { println( it )}
 
 }
 
