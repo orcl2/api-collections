@@ -1,35 +1,38 @@
 package com.williamdsk.collections
 
+import com.sun.xml.internal.fastinfoset.util.StringArray
+
 fun main(){
-    val values = IntArray(5)
-    values[0] = 12
-    values[1] = 54
-    values[2] = 9
-    values[3] = 43
-    values[4] = 87
+    var names = Array(5){""}
+    names[0] = "William"
+    names[1] = "Daniel"
+    names[2] = "da"
+    names[3] = "Silva"
+    names[4] = "Kuhs"
 
     //Primeira forma de iteração
-    for(value in values){
+    for(value in names){
         print("$value ")
     }
     print("\n")
 
     //Segunda forma de iteração
-    values.forEach {
+    names.forEach {
         print("$it ")
     }
     print("\n")
 
     //Terceira forma de iteração
-    for(value in values.indices){
-        print("${values[value]} ")
+    for(value in names.indices){
+        print("${names[value]} ")
     }
     print("\n")
 
     //Quarta forma de iteração com ordenação
-    values.sort()
-    for(value in values){
+    names.sort()
+    for(value in names){
         print("$value ")
     }
     print("\n")
+
 }

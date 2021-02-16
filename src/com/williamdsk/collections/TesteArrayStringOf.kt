@@ -1,35 +1,31 @@
 package com.williamdsk.collections
 
 fun main(){
-    val values = IntArray(5)
-    values[0] = 12
-    values[1] = 54
-    values[2] = 9
-    values[3] = 43
-    values[4] = 87
+    var names = arrayOf("William","Daniel","da","Silva","Kuhs")
 
     //Primeira forma de iteração
-    for(value in values){
+    for(value in names){
         print("$value ")
     }
     print("\n")
 
     //Segunda forma de iteração
-    values.forEach {
+    names.forEach {
         print("$it ")
     }
     print("\n")
 
     //Terceira forma de iteração
-    for(value in values.indices){
-        print("${values[value]} ")
+    for(value in names.indices){
+        print("${names[value]} ")
     }
     print("\n")
 
     //Quarta forma de iteração com ordenação
-    values.sort()
-    for(value in values){
+    names.sort()
+    for(value in names){
         print("$value ")
     }
     print("\n")
+
 }

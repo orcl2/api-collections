@@ -1,12 +1,7 @@
 package com.williamdsk.collections
 
 fun main(){
-    val values = IntArray(5)
-    values[0] = 12
-    values[1] = 54
-    values[2] = 9
-    values[3] = 43
-    values[4] = 87
+    val values = intArrayOf(5, 6, 8, 9 ,7)
 
     //Primeira forma de iteração
     for(value in values){
