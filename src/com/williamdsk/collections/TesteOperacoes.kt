@@ -19,4 +19,16 @@ fun main(){
     salarioMaiorQue2500.forEach(){
         println(it)
     }
+
+    println("--------------------------")
+    print("Salários entre 2000 e 5000 -> ")
+    println(salarios.count {it in 2000.00..5000.00})
+
+    println("--------------------------")
+    println(salarios.find {it == 5000.18})
+    println(salarios.find {it == 50.52})
+
+    println("--------------------------")
+    println(salarios.any {it == 5000.18})
+    println(salarios.any {it == 50.52})
 }
